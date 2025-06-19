@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "futurak";
+  src: url("../fonts/futurak.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "butler";
+  src: url("../fonts/Butler_Regular.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "apercu";
+  src: url("../fonts/Apercu-regular.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-color: #000;
+  --sub-body-color: #0f0f0f;
+  --main-text-color: #fff;
+  --secondary-text-color: #6c757d;
+  --primary-btn-color: #dc3545;
+  --secondary-btn-color: #198754;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background: var(--body-color);
+  color: var(--main-text-color);
+}
+
+/* navbar started */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .logo a img {
+  width: 165px;
+}
+
+.navbar ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-size: 1.7rem;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar ul li a button {
+  font-family: "Inter", sans-serif;
+}
+
+.franchies-btn {
+  padding: 7px 16px;
+  font-size: 1.5rem;
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: var(--body-color);
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+.order-btn {
+  padding: 7px 16px;
+  font-size: 1.5rem;
+  background-color: var(--primary-btn-color);
+  color: var(--main-text-color);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow-btn {
+  padding: 5px 8px;
+  color: var(--primary-btn-color);
+  background-color: var(--main-text-color);
+  border-radius: 30px;
+}
+/* navbar ended */
+
+/* main started */
+
+/* hero-img-section started */
+
+.hero-img img {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.hero-main-heading h1 {
+  font-family: "apercu";
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-top: 40px;
+}
+.font-style-futurak {
+  font-family: "futurak";
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 62px;
+}
+.hero-main-heading p {
+  font-family: "apercu";
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
+/* hero-img-section ended */
+
+/* order and booking section started */
+.order-and-booking {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px 100px;
+}
+.order-one,
+.order-two,
+.order-three,
+.booking-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.order-one img,
+.order-two img,
+.order-three img,
+.booking-one img {
+  background-color: var(--main-text-color);
+  border-radius: 10px;
+  padding: 0px 19px;
+  height: 27vh;
+  width: 95%;
+  height: 100%;
+}
+
+.order-one button,
+.order-two button,
+.order-three button,
+.booking-one button {
+  padding: 10px 32px;
+  background-color: var(--body-color);
+  color: var(--main-text-color);
+  border: 1px solid gray;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+/* order and booking section ended */
+
+/* Restaurant Franchises started */
+.restaurant-franchises {
+  background-color: var(--sub-body-color);
+}
+.sub-heading {
+  text-align: center;
+}
+.sub-heading h1 {
+  font-family: "butler";
+  font-size: 48px;
+}
+.sub-heading h1 span {
+  font-family: "futurak";
+  font-weight: 400;
+  line-height: 62px;
+  font-size: 52px;
+}
+.sub-heading p {
+  font-family: "apercu";
+  font-size: 1.5rem;
+  color: var(--secondary-text-color);
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.restaurant-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  line-height: 30px;
+}
+
+.restaurant-container h2 {
+  color: var(--primary-btn-color);
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+.restaurant-container div h1 {
+  font-family: "apercu";
+  font-size: 32px;
+}
+.restaurant-container div p {
+  font-family: "apercu";
+  line-height: 40px;
+  font-size: 16px;
+  color: var(--secondary-text-color);
+}
+
+.restaurant-container div h1 span {
+  font-family: "futurak";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 62px;
+}
+.restaurant-container div button {
+  padding: 15px 32px;
+  background-color: var(--body-color);
+  color: var(--main-text-color);
+  border: 1px solid gray;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin: 30px 0px;
+  font-size: 1.5rem;
+}
+.restaurant-container div button span {
+  margin-left: 20px;
+  padding: 10px;
+  color: var(--primary-btn-color);
+  background-color: var(--main-text-color);
+  border-radius: 20px;
+}
+
+.restaurant-container img {
+  margin: 0px 50px;
+  width: 80%;
+}
+/* Restaurant Franchises ended */
+
+/* Express Franchises started */
+.express-franchises {
+  margin: 20px 0px;
+}
+.express-franchises > h1 {
+  text-align: center;
+  font-size: 48px;
+}
+.express-franchises > h1 > span {
+  font-family: "futurak";
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 62px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px 65px;
+}
+.sub-container {
+  width: 30%;
+  line-height: 40px;
+  margin: 20px;
+  text-align: center;
+}
+.sub-container div img {
+  width: 100%;
+  border-radius: 20px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.sub-container div h1 {
+  font-size: 32px;
+  font-family: "apercu";
+  font-weight: 400;
+}
+
+.sub-container div h2 {
+  color: var(--primary-btn-color);
+  font-family: "apercu";
+  letter-spacing: 5px;
+}
+.sub-container div p {
+  font-family: "apercu";
+  font-size: 1.3rem;
+  color: var(--secondary-text-color);
+}
+.sub-container div button {
+  margin-top: 20px;
+  padding: 15px 20px;
+  background-color: var(--body-color);
+  color: var(--main-text-color);
+  border: 1px solid gray;
+  border-radius: 20px;
+  font-family: "inter";
+  font-weight: 500;
+}
+
+.sub-container div button span {
+  background-color: var(--main-text-color);
+  color: var(--primary-btn-color);
+  padding: 10px;
+  margin-left: 15px;
+  border-radius: 20px;
+}
+/* Express Franchises ended */
+
+/* Salt'n Pepper Village Franchise started */
+
+.franchise-container {
+  background-color: var(--sub-body-color);
+}
+
+.sub-franchise-container-heading {
+  text-align: center;
+}
+.sub-franchise-container-heading h1 {
+  font-size: 52px;
+  font-family: "apercu";
+  font-weight: 400;
+}
+.sub-franchise-container-heading h1 span {
+  font-family: "futurak";
+}
+
+.franchise-container > .sub-franchise-container-heading {
+  padding: 0px 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.franchise-container div {
+  width: 50%;
+}
+
+.sub-franchise-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 30px 0px;
+  line-height: 55px;
+}
+.sub-franchise-container div img {
+  margin-left: 30px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.sub-franchise-container div h2 {
+  color: var(--primary-btn-color);
+  letter-spacing: 10px;
+  font-family: "apercu";
+  font-size: 16px;
+}
+.sub-franchise-container div h1 {
+  font-family: "apercu";
+  font-size: 32px;
+}
+.sub-franchise-container div h1 span {
+  font-family: "futurak";
+  font-weight: 400;
+}
+.sub-franchise-container div p {
+  color: var(--secondary-text-color);
+  font-family: "apercu";
+  font-size: 16px;
+}
+
+.sub-franchise-container button {
+  padding: 15px 20px;
+  background-color: #28a745;
+  color: var(--main-text-color);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.sub-franchise-container button span {
+  color: #28a745;
+  background-color: var(--main-text-color);
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+/* Salt'n Pepper Village Franchise ended */
+
+/* Salt'n Pepper  Franchise (coming soon) started */
+.franchise-coming-soon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.coming-soon-heading > h1 {
+  font-size: 52px;
+  font-family: "apercu";
+  font-weight: 400;
+  text-align: center;
+}
+.coming-soon-heading > h1 > span {
+  font-family: "futurak";
+  font-weight: 400;
+}
+
+.coming-soon {
+  width: 25%;
+  height: 230px;
+  background: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 25px 24px;
+  margin: 20px 30px;
+  margin-bottom: 32px;
+  color: var(--body-color);
+  line-height: 25px;
+}
+.coming-soon h2 {
+  color: var(--primary-btn-color);
+  font-family: "apercu";
+  letter-spacing: 5px;
+  font-size: 1.2rem;
+}
+.coming-soon h1 {
+  font-family: "apercu";
+  font-size: 2rem;
+}
+.coming-soon h1 span {
+  font-family: "futurak";
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+/* Salt'n Pepper  Franchise (coming soon) ended */
+
+/* Social Feed started */
+.social-feed h1 {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "butler";
+  font-size: 4rem;
+  letter-spacing: 5px;
+}
+
+.social-feed-images {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 50px 30px;
+}
+.social-feed-images img {
+  width: 18vw;
+  height: 30vh;
+  border-radius: 10px;
+}
+/* Social Feed ended */
+
+/* main ended */
+
+/* footer started */
+.footer-main {
+  background-color: var(--sub-body-color);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fotter-info,
+.footer-links,
+.footer-addresses,
+.footer-social-links {
+  padding: 0px 35px;
+  width: 23vw;
+  margin: 20px 11px;
+}
+.fotter-info img {
+  max-width: 200px;
+  margin-bottom: 20px;
+  filter: brightness(0.9);
+}
+.fotter-info p {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  font-family: "apercu";
+  color: var(--secondary-text-color);
+}
+
+.footer-links h1,
+.footer-addresses h1,
+.footer-social-links h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-family: "butler";
+  letter-spacing: 3px;
+}
+.footer-links h2,
+.footer-addresses h2,
+.footer-social-links h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-family: "inter";
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.footer-addresses p{
+  font-size: 1.5rem;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-family: "apercu";
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+}
+.footer-links ul {
+  list-style: none;
+}
+.footer-links li {
+  margin-bottom: 12px;
+}
+.footer-links a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 5px 0px;
+  color: var(--secondary-text-color);
+  font-family: "apercu";
+  line-height: 30px;
+  font-weight: 400;
+}
+.footer-links a i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.footer-social-links img {
+  width: 150px;
+  margin-top: 10px;
+}
+.footer-social-links div span i {
+  border: none;
+  padding: 15px;
+  background-color: var(--primary-btn-color);
+  border-radius: 30px;
+  margin: 0px 2px;
+}
+
+.footer-sub {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px 30px;
+  font-family: "inter";
+  font-size: 1.2rem;
+}
+
+/* footer ended */
