@@ -769,5 +769,24 @@ body {
   font-family: "inter";
   font-size: 1.2rem;
 }
-
+@media (max-width: 1024px) {
+  .footer-links h1,
+  .footer-addresses h1,
+  .footer-social-links h1,
+  .footer-links h2,
+  .footer-addresses h2,
+  .footer-social-links h2,
+  .footer-addresses p {
+    font-size: 1rem;
+  }
+  .footer-social-links img {
+    display: none;
+  }
+  .footer-social-links div span i {
+    padding: 5px;
+  }
+  .footer-sub {
+    font-size: 0.8rem;
+  }
+}
 /* footer ended */
