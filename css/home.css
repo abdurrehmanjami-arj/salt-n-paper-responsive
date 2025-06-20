@@ -99,6 +99,23 @@ body {
   background-color: var(--main-text-color);
   border-radius: 30px;
 }
+.menu-bar {
+  display: none;
+  padding: 8px;
+  font-size: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .menu-bar {
+    display: block;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+}
 /* navbar ended */
 
 /* main started */
@@ -129,6 +146,33 @@ body {
   font-size: 2rem;
   font-weight: 500;
   color: var(--secondary-text-color);
+}
+@media (max-width: 1024px) {
+  .hero-main-heading h1 {
+    font-size: 3rem;
+  }
+  .font-style-futurak {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero-main-heading h1 {
+    font-size: 2rem;
+  }
+  .font-style-futurak {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 640px) {
+  .hero-main-heading h1 {
+    font-size: 1rem;
+  }
+  .font-style-futurak {
+    font-size: 2rem;
+  }
+  .hero-main-heading p {
+    font-size: 1rem;
+  }
 }
 /* hero-img-section ended */
 
@@ -172,6 +216,13 @@ body {
   border-radius: 20px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+  margin-bottom: 15px;
+}
+@media (max-width: 1024px) {
+  .order-and-booking {
+    justify-content: center;
+    align-items: center;
+  }
 }
 /* order and booking section ended */
 
@@ -206,6 +257,7 @@ body {
   flex-wrap: wrap;
   margin-top: 30px;
   line-height: 30px;
+  margin-left: 50px;
 }
 
 .restaurant-container h2 {
@@ -250,8 +302,55 @@ body {
 }
 
 .restaurant-container img {
-  margin: 0px 50px;
   width: 80%;
+}
+
+@media (max-width: 1024px) {
+  .sub-heading h1 {
+    font-size: 2rem;
+  }
+  .sub-heading h1 span {
+    font-size: 3rem;
+  }
+  .sub-heading p {
+    font-size: 1rem;
+  }
+  .restaurant-container div h1 {
+    font-size: 1.5rem;
+  }
+  .restaurant-container div h1 span {
+    font-size: 2rem;
+  }
+  .restaurant-container div p {
+    font-size: 1rem;
+  }
+  .restaurant-container h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 640px) {
+  .restaurant-container img {
+    display: none;
+  }
+  .restaurant-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .restaurant-container div h1 {
+    text-align: center;
+  }
+  .restaurant-container div h1 span {
+    text-align: center;
+  }
+  .restaurant-container div p {
+    text-align: center;
+  }
+  .restaurant-container h2 {
+    text-align: center;
+  }
+  .restaurant-container div {
+    text-align: center;
+  }
 }
 /* Restaurant Franchises ended */
 
@@ -322,6 +421,36 @@ body {
   padding: 10px;
   margin-left: 15px;
   border-radius: 20px;
+}
+@media (max-width: 1024px) {
+  .restaurant-container img {
+    width: 60%;
+    margin-left: 20px;
+  }
+  .express-franchises > h1 {
+    font-size: 2rem;
+  }
+  .express-franchises > h1 > span {
+    font-size: 3rem;
+  }
+  .sub-container div h1 {
+    font-size: 1.8rem;
+  }
+  .sub-container div h2 {
+    font-size: 1.3rem;
+  }
+  .sub-container div p {
+    font-size: 1rem;
+  }
+  .sub-container div button {
+    font-size: 1rem;
+  }
+  .sub-container div button span {
+    display: none;
+  }
+  .sub-container {
+    line-height: 20px;
+  }
 }
 /* Express Franchises ended */
 
@@ -401,6 +530,35 @@ body {
   border-radius: 20px;
   margin-left: 10px;
 }
+@media (max-width: 1024px) {
+  .sub-franchise-container-heading h1 {
+    font-size: 2rem;
+  }
+  .sub-franchise-container-heading h1 span {
+    font-size: 3rem;
+  }
+  .sub-franchise-container div h2 {
+    font-size: 1rem;
+  }
+  .sub-franchise-container {
+    line-height: 20px;
+  }
+  .sub-franchise-container div h1 {
+    font-size: 1rem;
+  }
+  .sub-franchise-container div h1 span {
+    font-size: 1.5rem;
+  }
+  .sub-franchise-container div p {
+    font-size: 1rem;
+  }
+  .sub-franchise-container button span {
+    display: none;
+  }
+  .sub-franchise-container button {
+    font-size: 1rem;
+  }
+}
 /* Salt'n Pepper Village Franchise ended */
 
 /* Salt'n Pepper  Franchise (coming soon) started */
@@ -447,7 +605,36 @@ body {
   font-size: 2.5rem;
   font-weight: 400;
 }
-
+@media (max-width: 1024px) {
+  .franchise-coming-soon {
+    justify-content: center;
+  }
+  .coming-soon-heading > h1 {
+    font-size: 1.5rem;
+  }
+  .coming-soon-heading > h1 > span {
+    font-size: 2rem;
+  }
+  .coming-soon h2 {
+    font-size: 1rem;
+  }
+  .coming-soon h1 {
+    font-size: 1.5rem;
+  }
+  .coming-soon h1 span {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .coming-soon {
+    line-height: 20px;
+  }
+  .franchise-coming-soon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /* Salt'n Pepper  Franchise (coming soon) ended */
 
 /* Social Feed started */
@@ -469,6 +656,17 @@ body {
   width: 18vw;
   height: 30vh;
   border-radius: 10px;
+}
+@media (max-width: 1024px) {
+  .social-feed h1 {
+    font-size: 2rem;
+  }
+  .social-feed-images {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 /* Social Feed ended */
 
@@ -522,7 +720,7 @@ body {
   font-weight: 400;
 }
 
-.footer-addresses p{
+.footer-addresses p {
   font-size: 1.5rem;
   margin-top: 20px;
   padding-bottom: 10px;
